@@ -3,323 +3,384 @@
 @tailwind utilities;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: 100vw;
-    background: #0F0617;
+  width: 100vw;
+  background: #0f0617;
 }
 
-nav > a {
-    background-image: linear-gradient(90deg, white, white);
-    background-size: 0 2px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    transition: all .3s ease-in-out ;
+main {
+  width: 100vw;
 }
 
-nav > a:hover {
-    background-size: 100% 2px;
+.carousel-cell {
+  width: 66%;
+  height: 400px;
 }
 
-nav > .apps:hover {
-    background-size: 0 2px;
-    color: #DA76FF;
-    cursor: pointer;
+.carousel-cell > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  .carousel-cell {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .carousel-cell {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .carousel-cell {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+nav > div > a {
+  background-image: linear-gradient(90deg, white, white);
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.3s ease-in-out;
+}
+
+nav > div > a:hover {
+  background-size: 100% 2px;
+}
+
+.noborder:hover {
+    background-size: 0% 2px;
+}
+
+.cws::-webkit-scrollbar {
+  width: 0;
+}
+
+nav .apps:hover {
+  background-size: 0 2px;
+  color: #da76ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn {
+    display: none;
+  }
 }
 
 .apps > .appdrawer {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .apps:hover .appdrawer {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .appdrawer a {
-    padding: .5rem 12px;
-    width: 100%;
-    border-radius: 4px;
+  padding: 0.5rem 12px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .appdrawer a:hover {
-    background-color: #1D1525;
-    transition: all .3s ease-in-out;
+  background-color: #1d1525;
+  transition: all 0.3s ease-in-out;
 }
 
 /* FOOTER START */
 
-footer .footer-top .social-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #ffffff;
-    gap: 1rem;
-    align-items: center;
+footer .footer-top .social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+  gap: 1rem;
+  align-items: center;
 }
-footer .footer-top .social-icon .icons{
-    display: flex;
-    flex-direction: row;
-    
-    color: #ffffff;
-    gap: 1rem;
-    align-items: center;
+footer .footer-top .social-icon .icons {
+  display: flex;
+  flex-direction: row;
+
+  color: #ffffff;
+  gap: 1rem;
+  align-items: center;
 }
 
-footer .footer-top .social-icon .icon{
-    height: 40px;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color:#221A29;
-    text-decoration: none;
-    color: #ffffff;
+footer .footer-top .social-icon .icon {
+  height: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #221a29;
+  text-decoration: none;
+  color: #ffffff;
 }
-footer .footer-top .social-icon .facebook-icon:hover{
-    background-color: #2222C3;
+footer .footer-top .social-icon .facebook-icon:hover {
+  background-color: #2222c3;
 }
-footer .footer-top .social-icon .instagram-icon:hover{
-    background-color: #D1135F;
+footer .footer-top .social-icon .instagram-icon:hover {
+  background-color: #d1135f;
 }
-footer .footer-top .social-icon .twitter-icon:hover{
-    background-color: #227DC3;
+footer .footer-top .social-icon .twitter-icon:hover {
+  background-color: #227dc3;
 }
-footer .footer-top .social-icon .youtube-icon:hover{
-    background-color: #DA3919;
+footer .footer-top .social-icon .youtube-icon:hover {
+  background-color: #da3919;
 }
-footer .footer-manu .footer-manu-items{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+footer .footer-manu .footer-manu-items {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
-footer .footer-manu .footer-manu-items li{
-    text-decoration: none;
-    list-style-type: none;
+footer .footer-manu .footer-manu-items li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
-footer .footer-manu .footer-manu-items .border-right{
-    border-right: 1px solid  rgba(255, 255, 255, 0.7);
-    padding-right:1rem ;
+footer .footer-manu .footer-manu-items .border-right {
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  padding-right: 1rem;
 }
-footer .footer-manu .footer-manu-items li a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
+footer .footer-manu .footer-manu-items li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
 }
-footer .footer-manu .footer-manu-items li a:hover{
-    color: rgba(225, 21, 225, 0.677);
+footer .footer-manu .footer-manu-items li a:hover {
+  color: rgba(225, 21, 225, 0.677);
 }
-footer .mega-manu-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem 0;
+footer .mega-manu-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
-footer .mega-manu-footer-items h3 a{
-    text-decoration: none;
-    color: #ffffff;
-   
+footer .mega-manu-footer-items h3 a {
+  text-decoration: none;
+  color: #ffffff;
 }
 footer .mega-manu-footer-items h3 {
-    padding: 0.8rem 0rem;
-    font-size: 0.9rem;
-   
+  padding: 0.8rem 0rem;
+  font-size: 0.9rem;
 }
-footer .mega-manu-footer-items ul li{
-    list-style-type: none;
-    padding: 0.5rem 0;
+footer .mega-manu-footer-items ul li {
+  list-style-type: none;
+  padding: 0.5rem 0;
 }
-footer .mega-manu-footer-items ul li a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    
-    color: rgba(255, 255, 255, 0.7);
-}
-footer .mega-manu-footer-items ul li a:hover{
-    color: #8230C6;
-}
-footer .copyright{
-    margin-top: 5rem;
-    color: hsla(0,0%,100%,.5);
-    font-size: 0.9rem;
-}
-@media screen and (max-width:768px){
-    footer{
-        width: 100%;
-        overflow-x: hidden;
-    }
-    
- }
- @media screen and (max-width:450px){
-    footer{
-        
-        padding: 1rem 1rem;
-    }
-    footer .footer-top{
-        flex-direction: column;
-        align-items: center;
-        
-        
-    }
-    footer .footer-top .social-apps {
-        align-items: center;
-        flex-direction: column;
-        
-        
-        
-    }
-    footer .footer-top .social-apps h3 {
-        visibility: hidden;
-        
-        
-        
-    }
-    footer .footer-top .social-icon {
-        flex-direction: column;
-        
-        
-    }
-    footer .footer-top .social-icon h3{
-        visibility: hidden;
-        
-    }
-    footer .footer-manu .footer-manu-items{
-        flex-wrap: wrap;
-        
-    }
-    footer .mega-manu-footer{
-        flex-direction: column;
-    }
-    footer .footer-top .social-icon .icon{
-        margin-top: 1rem;
-    }
+footer .mega-manu-footer-items ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
 
-    
- }
- @media screen and (max-width:770px){
-    footer{
-        
-        padding: 1rem 1rem;
-    }
-    footer .footer-top{
-        flex-direction: column;
-        align-items: center;
-        
-        
-    }
-    footer .footer-top .social-apps {
-        align-items: center;
-        flex-direction: column;
-        
-        
-        
-    }
-    footer .footer-top .social-icon {
-        flex-direction: column;
-        
-        
-    }
-    footer .footer-manu .footer-manu-items{
-        flex-wrap: wrap;
-        
-    }
-   
-    footer .footer-top .social-icon .icon{
-        margin-top: 0.5rem;
-    }
-    footer .mega-manu-footer-items h3 {
-        padding: 1rem 1rem;
-        
-       
-    }
-    footer .footer-manu .footer-manu-items li{
-        list-style-type:circle;
-    }
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .mega-manu-footer-items ul li a:hover {
+  color: #8230c6;
+}
+footer .copyright {
+  margin-top: 5rem;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    padding: 1rem 1rem;
+  }
+  footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-top .social-apps {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer-top .social-apps h3 {
+    visibility: hidden;
+  }
+  footer .footer-top .social-icon {
+    flex-direction: column;
+  }
+  footer .footer-top .social-icon h3 {
+    visibility: hidden;
+  }
+  footer .footer-manu .footer-manu-items {
+    flex-wrap: wrap;
+  }
+  footer .mega-manu-footer {
+    flex-direction: column;
+  }
+  footer .footer-top .social-icon .icon {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  footer {
+    padding: 1rem 1rem;
+  }
+  footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-top .social-apps {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer-top .social-icon {
+    flex-direction: column;
+  }
+  footer .footer-manu .footer-manu-items {
+    flex-wrap: wrap;
+  }
 
-    
- }
+  footer .footer-top .social-icon .icon {
+    margin-top: 0.5rem;
+  }
+  footer .mega-manu-footer-items h3 {
+    padding: 1rem 1rem;
+  }
+  footer .footer-manu .footer-manu-items li {
+    list-style-type: circle;
+  }
+}
 /* FOOTER end  */
 
+/* HAMBURGER STYLE  */
+/* #menu {
+  width: 30vw;
+  transition: all 1s ease-in-out;
+} */
 
-/* LOGIN - SIGNUP Page  */
-
-
-.signup-header h1 {
-    font-size: 2.5rem;
-    color: #212121;
+.navclass{
+  position: fixed;
+  top: 10%;
+  right:0%;
+  z-index: 1000;
+  background-color: #0F0617;
 }
 
-.signup-header p {
-    font-size: 0.8rem;
-    color: #555;
+.menu{
+  position: fixed;
+  right: -100%;
+  top:10%;
+  pointer-events: all;
+  z-index: 100;
 }
 
-.signup-body {
-    margin: 20px 0;
+
+/* HAMBURGER STYLE ENDS */
+
+
+
+/* BACK TO TOP  */
+.back-to-top {
+  background: #38294179;
+  color: #7E2FBE;
+  font-size: 26px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  aspect-ratio: 1;
+  position: fixed;
+  bottom: 16px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
-.signup-body p {
-    margin: 10px 0;
+.back-to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 10px;
+}
+/* BACK TO TOP  */
+
+
+@media screen and (min-width:1024px) {
+  .widthofcarousel3 {
+    width:18vw;
+  }
+  
 }
 
-.signup-body p label {
-    display: block;
-    font-weight: bold;
+@media screen and (min-width:1024px) and (max-width:1024px){
+  .widthofcarousel3 {
+    width:24vw;
+  }
+  
 }
 
-.signup-body p input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #cccc;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    margin: 4px;
+@media screen and (max-width:768px) {
+  .widthofcarousel3 {
+    width:32vw;
+  }
+  
 }
 
-.signup-body p input[type="submit"] {
-    background-color: rgb(90, 90, 255);
-    border: none;
-    color: white;
-    cursor: pointer;
+
+@media screen and (max-width:500px) {
+  .widthofcarousel3 {
+    width:60vw;
+  }
+  
 }
 
-.signup-body p input[type="submit"]:hover {
-    background-color: rgb(6, 6, 143);
+
+/* CARAOUSEL-1 */
+@media screen and (min-width:1024px) {
+  .widthofcarousel1 {
+    width:15vw;
+  }
+  
 }
 
-.signup-footer p {
-    color: rgb(104, 100, 100);
-    text-align: center;
+@media screen and (min-width:1024px) and (max-width:1024px){
+  .widthofcarousel1 {
+    width:20vw;
+  }
+  
 }
 
-.signup-footer p a {
-    color: rgb(6, 6, 143);
+@media screen and (max-width:768px) {
+  .widthofcarousel1 {
+    width:24vw;
+  }
+  
 }
 
-.circle {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-    background: linear-gradient(to top right, #FFD26F, #E96D71);
-    position: absolute;
+@media screen and (max-width:500px) {
+  .widthofcarousel1 {
+    width:38vw;
+  }
+  
 }
-
-.c1 {
-    top: 100px;
-    left: 40px;
-}
-
-.c2 {
-    bottom: 100px;
-    right: 40px;
-}
-/* LOGIN - SIGNUP Page ENDS */
+/* CARAOUSEL-1 */

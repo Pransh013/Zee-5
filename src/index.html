@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://npmcdn.com/flickity@2/dist/flickity.css"
+    />
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="./input.css" />
     <link
@@ -26,78 +31,200 @@
     ></script>
     <title>ZEE5 - Watch TV Shows, Web Series, Movies & Live TV Channels</title>
   </head>
-  <body>
-    <main>
-      <!-- HEADER  -->
+  <body class="cws">
+    <main class="relative">
+      <!-- HEADER Starts -->
 
       <header
-        class="w-[100vw] px-10 h-20 flex justify-between sticky top-0 bg-[#0F0617] border-2 border-red-700"
+        class="flex flex-col md:h-20 py-4 pr-1 sm:pr-0 gap-3 sticky z-10 top-0 bg-[#0F0617]"
       >
-        <nav class="flex justify-between gap-6 items-center text-white">
-          <img class="w-[45px]" src="../images/ZEE5_logo.svg" alt="" />
-          <a href="#">Home</a>
-          <a href="">TV Shows</a>
-          <a href="">Movies</a>
-          <a href="">Premium</a>
-          <a href="">Web Series</a>
-          <div class="relative flex items-center h-full apps">
-            <span class="material-symbols-outlined"> apps </span>
+        <div
+          class="w-[100vw] h-full flex justify-around items-center sticky top-0 bg-[#0F0617]"
+        >
+          <div>
+            <img class="w-[45px]" src="../images/ZEE5_logo.svg" alt="" />
+          </div>
+          <nav class="flex">
             <div
-              class="w-[170px] h-[350px] absolute bg-[#0F0617] z-100 top-20 -left-16 flex justify-evenly items-start flex-col text-sm text-white appdrawer border-2 border-[#291F2F] rounded-md px-6"
+              class="md:flex justify-between whitespace-nowrap gap-2 md:gap-4 items-center text-white hidden"
             >
-              <a href="">Rent</a>
-              <a href="">Live TV</a>
-              <a href="">Eduauraa</a>
-              <a href="">Music</a>
-              <a href="">Sports</a>
-              <a href="">Kids</a>
-              <a href="">Songs</a>
-              <a href="">Videos</a>
+              <a class="border-b-2 border-white noborder" href="#">Home</a>
+              <a href="./tvshows.html">TV Shows</a>
+              <a href="">Movies</a>
+              <a href="">Premium</a>
+              <a href="">Web Series</a>
+              <div class="relative flex items-center h-full apps">
+                <span class="material-symbols-outlined"> apps </span>
+                <div
+                  class="w-[180px] h-[360px] absolute bg-[#0F0617] z-100 top-8 -left-16 flex justify-evenly items-start flex-col text-sm text-white appdrawer border-2 border-[#291F2F] rounded-md px-6"
+                >
+                  <a href="">Rent</a>
+                  <a href="">Live TV</a>
+                  <a href="">Eduauraa</a>
+                  <a href="">Music</a>
+                  <a href="">Sports</a>
+                  <a href="">Kids</a>
+                  <a href="">Songs</a>
+                  <a href="">Videos</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </nav>
-        <div class="gap-6 flex items-center justify-around">
+          </nav>
           <div
-            class="border-[1px] border-[#757575] flex items-center flex-grow-[1] gap-2 rounded-md p-2"
+            class="gap-2 sm:gap-6 flex items-center relative justify-around"
           >
-            <i class="fa-solid fa-magnifying-glass text-white"></i>
-            <input
-              class="text-white w-full placeholder:text-[12px] placeholder:text-[#757575] border-none bg-inherit focus:outline-none"
-              type="text"
-              placeholder="Search for Movies, Shows, Channels etc."
-            />
-          </div>
-          <div
-            class="bg-[#1B1323] w-[40px] transition-all duration-300 ease-in-out flex justify-center items-center h-[40px] rounded-[50%] hover:bg-[#332B3A] hover:cursor-pointer"
-          >
-            <img class="w-[70%]" src="../images/language-icon.png" alt="" />
-          </div>
-          <a href="./login.html">
+            <div
+              class="border-[1px] border-[#757575] flex items-center md:flex-grow-[1] gap-1.5 rounded-md p-2 w-48 sm:w-80 md:w-auto"
+            >
+              <i class="fa-solid fa-magnifying-glass text-white"></i>
+              <input
+                class="text-white w-full placeholder:text-[12px] placeholder:text-[#757575] border-none bg-inherit focus:outline-none"
+                type="text"
+                placeholder="Search for Movies, Shows, Channels etc."
+              />
+            </div>
+            <div
+              class="bg-[#1B1323] w-[40px] transition-all duration-300 ease-in-out hidden md:flex justify-center items-center h-[40px] rounded-[50%] hover:bg-[#332B3A] hover:cursor-pointer btn"
+            >
+              <img class="w-[1.5vw]" src="../images/language-icon.png" alt="" />
+            </div>
+            <a class="hidden sm:flex" href="./login.html">
+              <button
+                class="border-[1px] border-solid border-white transition-all duration-400 ease-in-out text-white px-4 py-2 rounded-md uppercase text-sm font-bold hover:bg-white hover:text-black"
+                type="button"
+              >
+                Login
+              </button>
+            </a>
             <button
-            class="border-[1px] border-solid border-white transition-all duration-400 ease-in-out text-white px-4 py-2 rounded-md uppercase text-sm font-bold hover:bg-white hover:text-black"
-            type="button"
-          >
-            Login
-          </button>
-          </a>
-          <button
-            class="bg-[#8230C6] hover:bg-[#5C1695] transition-all duration-300 ease-in-out text-white p-2 rounded-md uppercase text-sm font-bold"
-            type="button"
-          >
-            <i class="fa-solid fa-crown"></i>&nbsp; Buy Plan
-          </button>
-          <div
-            class="bg-[#1B1323] w-[35px] flex justify-center items-center h-[35px] rounded-[50%] hover:cursor-pointer"
-          >
-            <span class="material-symbols-outlined text-white font-bold">
-              menu
-            </span>
+              class="bg-[#8230C6] hover:bg-[#5C1695] transition-all whitespace-nowrap duration-300 ease-in-out text-white px-2 py-2 sm:p-2 rounded-md uppercase text-[8px] sm:text-sm font-bold"
+              type="button"
+            >
+              <i class="fa-solid fa-crown"></i>&nbsp; Buy Plan
+            </button>
+
+            <!-- HAMBURGER -->
+
+            <div
+              id="menuToggle"
+              class="bg-[#1B1323] w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+            >
+              <span
+                id="menuIcon"
+                class="material-symbols-outlined text-white font-bold text-xl"
+                >menu</span
+              >
+            </div>
+            <div
+              id="overlay"
+              class="hidden fixed inset-0 bg-[#00000094] transition-all duration-500 ease-in-out z-40 pointer-events-none"
+            ></div>
+
+            <div
+              id="menu"
+              class="menu border-[1px] rounded-md border-[#37293f] transition-all duration-300 ease-in-out w-full md:w-[20rem] h-[90vh] md:h-[85vh] flex justify-around flex-col gap-3 cws py-8 text-sm text-white overflow-hidden"
+            >
+            <a class="bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-bold text-sm" href="./index.html">Home</a>
+            
+            <div class=" border-t border-[1px] border-[#271F2F]"></div>
+            <div class="w-[80%] flex justify-between text-[#87838B] items-center mx-8">
+              <a class="font-bold text-sm" href="">Explore</a>
+              <i class="fa-solid fa-caret-down text-white"></i>
+            </div>
+            <div class=" border-t border-[1px] w-full border-[#271F2F]"></div>
+            <div class="flex flex-col gap-2">
+              <div class="w-[80%] flex justify-between text-[#87838B] items-center mx-8">
+                <a class="font-bold text-sm" href="">Plans</a>
+                <i class="fa-solid fa-caret-up text-white"></i>
+              </div>
+              <div class="flex flex-col">
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Buy Plan</a>
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Have a prepaid code ?</a>
+              </div>
+            </div>
+            
+            <div class=" border-t border-[1px] w-full border-[#271F2F]"></div>
+
+            <div class="flex flex-col gap-2">
+              <div class="w-[80%] flex justify-between text-[#87838B] items-center mx-8">
+                <a class="font-bold text-sm" href="">Settings</a>
+                <i class="fa-solid fa-caret-up text-white"></i>
+              </div>
+              <div class="flex flex-col">
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Reset settings to default</a>
+              </div>
+            </div>
+
+            <div class=" border-t border-[1px] w-full border-[#271F2F]"></div>
+            <div class="hover:bg-[#1D1525] mx-4 px-4 py-4 my-2 rounded-md font-bold text-sm">Refer and earn Discount</div>
+            <div class=" border-t border-[1px] w-full border-[#271F2F]"></div>
+
+            <div class="flex flex-col gap-2">
+              <div class="w-[80%] flex justify-between text-[#87838B] items-center mx-8">
+                <a class="font-bold text-sm" href="">Plans</a>
+                <i class="fa-solid fa-caret-up text-white"></i>
+              </div>
+              <div class="flex flex-col">
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">About Us</a>
+                <!-- <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Help Center</a>
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Content Redressal Mechanism</a>
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Terms of Use</a>
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Privacy Policy</a>
+                <a class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm" href="">Refer and earn Discount</a> -->
+              </div>
+            </div>
+            <div class=" border-t border-[1px] w-full border-[#271F2F]"></div>
+            <p class="text-center text-xs w-full text-[#858189] mt-4 font-semibold">Version 3.15.17</p>
+            
+            </div>
+
+            <!-- HAMBURGER ENDS -->
           </div>
         </div>
+        <nav>
+          <div
+            class="cws md:hidden w-full flex whitespace-nowrap pl-4 justify-between gap-6 items-center text-white border-0 border-yellow-600 overflow-x-scroll"
+          >
+            <a class="border-b-2 border-white noborder" href="#">Home</a>
+            <a href="">TV Shows</a>
+            <a href="">Movies</a>
+            <a href="">Premium</a>
+            <a href="">Web Series</a>
+            <a href="">Rent</a>
+            <a href="">Live TV</a>
+            <a href="">Eduauraa</a>
+            <a href="">Music</a>
+            <a href="">Sports</a>
+            <a href="">Kids</a>
+            <a href="">Songs</a>
+            <a href="">Videos</a>
+          </div>
+        </nav>
       </header>
 
-      <div class="h-[100vh] w-full">
+      <!-- HEADER ENDS  -->
 
+      <div id="page1" class="h-[47vh] sm:h-[55vh] md:h-[73vh] w-full">
+        <div class="carousel mt-4 md:mt-10" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell">
+            <img src="../images/Ghoomer1.webp" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../images/Gadar1.webp" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../images/BhagyaLakshmi1.webp" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../images/Haddi1.webp" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../images/KundaliBhagya1.webp" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="../images/SirfEk1.webp" alt="" />
+          </div>
+        </div>
       </div>
 
       <!-- FOOTER starts -->
@@ -127,27 +254,25 @@
             <h3 class="icon-tital">Connect with us</h3>
             <div class="icons">
               <div class="facebook-icon icon">
-                <a
-                href="https://www.facebook.com/ZEE5/"
-                ><i class="fa-brands fa-square-facebook"></i></a
-                >
+                <a href="https://www.facebook.com/ZEE5/"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
               </div>
               <div class="instagram-icon icon">
-                <a
-                href="https://www.instagram.com/zee5/"
-                ><i class="fa-brands fa-instagram"></i></a
-                >
+                <a href="https://www.instagram.com/zee5/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </div>
               <div class="twitter-icon icon">
                 <a href="https://twitter.com/zee5india"
-                ><i class="fa-brands fa-twitter"></i></a
-                >
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </div>
               <div class="youtube-icon icon">
                 <a
-                href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
-                ><i class="fa-brands fa-youtube"></i></a
-                >
+                  href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -196,12 +321,6 @@
                 <li>
                   <a href="">Indira</a>
                 </li>
-                <li>
-                  <a href="">Korean Drama</a>
-                </li>
-                <li>
-                  <a href="">Pakistani Serials</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -237,12 +356,6 @@
                 </li>
                 <li>
                   <a href="">The Kashmir Files</a>
-                </li>
-                <li>
-                  <a href="">Dial 100</a>
-                </li>
-                <li>
-                  <a href="">Helmet</a>
                 </li>
               </ul>
             </div>
@@ -298,12 +411,6 @@
                 <li>
                   <a href="">Naxalbari</a>
                 </li>
-                <li>
-                  <a href="">Anantham</a>
-                </li>
-                <li>
-                  <a href="">Gaalivana</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -338,16 +445,10 @@
                   <a href="">Sunny Deol</a>
                 </li>
                 <li>
-                  <a href="">Ameesha Patel</a>
-                </li>
-                <li>
                   <a href="">Abhishek Bachchan</a>
                 </li>
                 <li>
                   <a href="">Amitabh Bachchan</a>
-                </li>
-                <li>
-                  <a href="">Saiyami Kher</a>
                 </li>
               </ul>
             </div>
@@ -375,7 +476,23 @@
           reserved.
         </p>
       </footer>
+
       <!-- FOOTER END -->
     </main>
+    <a href="#" class="back-to-top" title="button">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <script src="script.js"></script>
   </body>
 </html>
+
+<!-- 
+<div id="menuToggle" class=" bg-[#1B1323] w-10 h-10 rounded-full flex items-center justify-center cursor-pointer">
+  <span id="menuIcon" class="material-symbols-outlined text-white font-bold text-xl">menu</span>
+</div>
+
+<div id="overlay" class="hidden fixed inset-0 bg-[#0f061783] transition-all duration-500 ease-in-out bg-opacity-30 z-40 pointer-events-none"></div>
+
+<div id="menu" class="hidden w-0 md:border-2 border-r-0 fixed top-16 right-[25vw] transition-all duration-500 ease-in-out h-[80vh]  bg-[#0f0617] z-50 transform translate-x-full">
+  <p class="text-2xl font-bold text-white p-4">Menu Content</p>
+</div> -->
