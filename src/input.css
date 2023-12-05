@@ -387,3 +387,66 @@ footer .copyright {
   
 }
 /* CARAOUSEL-1 */
+
+.imageholder{
+  width: 98%;
+  height: 76.5vh;
+  display: flex;
+  gap:12px;
+  overflow: hidden;
+}
+
+.firstPic{
+  width: 75%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.firstPic > div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.remaining{
+  overflow-y: scroll;
+  border:1px;
+  display: flex;
+  flex-direction: column;
+  width: 21.6%;
+  position: relative;
+}
+
+.remaining > div {
+  position: relative;
+}
+
+.remaining > div > div {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.remaining > div > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.cws::-webkit-scrollbar{
+  width: 0;
+}
+
+.cardCount {
+  color: #A785FF;
+  font-size: 30px;
+  font-style: bold;
+}
+
+.remaining::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.036));
+  inset: 0;
+  z-index: 1000;
+}
