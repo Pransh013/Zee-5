@@ -93,7 +93,7 @@ nav .apps:hover {
 }
 
 .appdrawer a {
-  padding: 0.5rem 12px;
+  padding: 0.8rem 12px;
   width: 100%;
   border-radius: 4px;
 }
@@ -268,17 +268,12 @@ footer .copyright {
 }
 /* FOOTER end  */
 
-/* HAMBURGER STYLE  */
-/* #menu {
-  width: 30vw;
-  transition: all 1s ease-in-out;
-} */
 
 .navclass{
   position: fixed;
   top: 10%;
   right:0%;
-  z-index: 1000;
+  z-index: 10000;
   height: 85vh;
   background-color: #0F0617;
 }
@@ -294,7 +289,7 @@ footer .copyright {
   right: -100%;
   top:10%;
   pointer-events: all;
-  z-index: 100;
+  z-index: 1000;
   /* height:85vh; */
 }
 

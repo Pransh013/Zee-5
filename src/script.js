@@ -5,11 +5,11 @@ document.getElementById('menuToggle').addEventListener('click', function () {
 
     overlay.classList.toggle('hidden');
     if (menu.classList.contains('menu')) {
-        
+
         menu.classList.remove('menu');
         menu.classList.add('navclass');
     }
-    else if(menu.classList.contains('navclass')){
+    else if (menu.classList.contains('navclass')) {
         menu.classList.remove('navclass');
         menu.classList.add('menu');
     }
@@ -28,3 +28,28 @@ window.addEventListener('scroll', function () {
 
     }
 });
+
+
+function scrollCarousel(carouselId, percentage) {
+    const carousel = document.getElementById(carouselId);
+    const scrollAmount = (percentage / 100) * window.innerWidth;
+    carousel.scrollLeft += scrollAmount;
+}
+
+function handleScroll(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const prevArrow = document.querySelector('.carousel-prev');
+    const nextArrow = document.querySelector('.carousel-next');
+
+    carousel.addEventListener('scroll', () => {
+
+        setTimeout(() => {
+            prevArrow.style.display = carousel.scrollLeft > 0 ? 'flex' : 'none';
+        }, 500);
+
+        // nextArrow.style.display = carousel.scrollLeft === (carousel.scrollWidth - carousel.clientWidth) ? 'none' : 'flex';
+    });
+}
+handleScroll('carousel1');
+handleScroll('carousel2');
+handleScroll('carousel3');
