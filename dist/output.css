@@ -647,6 +647,15 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -709,6 +718,10 @@ video {
 
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-\[45vh\] {
+  height: 45vh;
 }
 
 .h-\[47vh\] {
@@ -781,6 +794,10 @@ video {
 
 .w-\[83\%\] {
   width: 83%;
+}
+
+.w-\[83vw\] {
+  width: 83vw;
 }
 
 .w-full {
@@ -992,11 +1009,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-yellow-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
 .border-yellow-600 {
@@ -1758,6 +1770,70 @@ footer .copyright {
 
 /* CARAOUSEL-1 */
 
+.imageholder{
+  width: 98%;
+  height: 76.5vh;
+  display: flex;
+  gap:12px;
+  overflow: hidden;
+}
+
+.firstPic{
+  width: 75%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.firstPic > div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.remaining{
+  overflow-y: scroll;
+  border:1px;
+  display: flex;
+  flex-direction: column;
+  width: 21.6%;
+  position: relative;
+}
+
+.remaining > div {
+  position: relative;
+}
+
+.remaining > div > div {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.remaining > div > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.cws::-webkit-scrollbar{
+  width: 0;
+}
+
+.cardCount {
+  color: #A785FF;
+  font-size: 30px;
+  font-style: bold;
+}
+
+.remaining::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.036));
+  inset: 0;
+  z-index: 1000;
+}
+
 .placeholder\:text-\[12px\]::-moz-placeholder {
   font-size: 12px;
 }
@@ -2011,11 +2087,6 @@ footer .copyright {
 
   .md\:p-2 {
     padding: 0.5rem;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:text-\[1\.75rem\] {
