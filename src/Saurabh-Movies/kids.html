@@ -22,7 +22,271 @@
 <body class="cws">
   <main class="relative">
     <!-- HEADER Starts -->
+    <header
+        class="flex flex-col md:h-20 py-4 pr-1 sm:pr-0 gap-3 sticky z-10 top-0 bg-[#0F0617]"
+      >
+        <div
+          class="w-[100vw] h-full flex justify-around items-center sticky top-0 bg-[#0F0617]"
+        >
+          <div>
+            <a href="#"><img class="w-[45px]" src="./Image/Header/ZEE5_logo.svg" alt="" /></a>
+          </div>
+          <nav class="flex">
+            <div
+              class="md:flex justify-between whitespace-nowrap gap-2 md:gap-3 items-center text-white text-md hidden"
+            >
+              <a href="../Pransh-HomePage/index.html">Home</a>
+              <a href="../Karan-TVShows/tvshows.html">TV Shows</a>
+              <a href="./movies.html">Movies</a>
+              <a href="../Sahil-Premium/premium.html">Premium</a>
+              <a href="../Sahil-Premium/webseries.html">Web Series</a>
+              <div class="relative flex items-center h-full apps">
+                <span class="material-symbols-outlined"> apps </span>
+                <div
+                  class="w-[200px] h-[400px] absolute bg-[#0F0617] z-100 top-[25px] left-[-76px] flex justify-evenly items-start flex-col text-sm text-white appdrawer border-2 border-[#291F2F] rounded-md px-6 py-2"
+                >
+                  <a href="../Karan-TVShows/rent.html">Rent</a>
+                  <a href="../Aysha-Videos/livetv.html">Live TV</a>
+                  <a href="../Karan-TVShows/eduauraa.html">Eduauraa</a>
+                  <a href="../Ajay-Music/music.html">Music</a>
+                  <a href="../Ajay-Music/sports.html">Sports</a>
+                  <a href="./kids.html">Kids</a>
+                  <a href="../Pransh-HomePage/songs.html">Songs</a>
+                  <a href="../Aysha-Videos/videos.html">Videos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="gap-2 sm:gap-4 flex items-center relative justify-around">
+            <div id="search-container" class="relative">
+              <div
+                class="border-[1px] border-[#757575] flex items-center md:flex-grow-[1] gap-1.5 rounded-md p-1.5 md:p-2 w-48 sm:w-80 md:w-[260px]"
+              >
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                <input
+                  class="text-white w-full placeholder:text-[12px] placeholder:text-[#757575] border-none bg-inherit focus:outline-none"
+                  type="text"
+                  placeholder="Search for Movies, Shows, Channels etc."
+                  onfocus="showResults()"
+                />
+              </div>
 
+              <div id="search-results" class="hidden absolute z-100 rounded-md top-full h-[530px] overflow-y-scroll cws left-0 px-1.5 py-2 w-full bg-[#11051C]">
+                <h1 class="text-white py-2">Top Searches</h1>
+                <div class="flex flex-wrap gap-1 child-div">
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5437988/portrait/1920x770d2ae55bafb9d401bb6e728423183501b.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5454041/portrait/1920x7704647c951c28b4334926cdce8bfe92765.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5418670/portrait/1920x770ad3a2f531beb4427a82ac7e4c6fb86c1.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-366/portrait/1920x77071ffa531aa91418caa5ffbbe05bd5528.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-366/portrait/1920x77071ffa531aa91418caa5ffbbe05bd5528.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-127/portrait/1920x7707ea0da828efc43188b7896fac2f9831d.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3015/portrait/063015cover947b2796460044c3b9bbe9ad4023826c.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3015/portrait/063015cover947b2796460044c3b9bbe9ad4023826c.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5193948/portrait/1920x770865568a654184a3fa36e783ac1b0f8ca.jpg" alt="img1"/></div>
+                  <div><img class="rounded-md w-[80px]" src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5173774/portrait/1920x7704bee48864ab34c5f8cd8489dd0446cbd.jpg" alt="img1"/></div>
+                </div>
+              </div>
+
+            </div>
+            <div id="btnbtn"
+              class="bg-[#1B1323] w-[40px] transition-all duration-300 ease-in-out hidden md:flex justify-center items-center h-[40px] rounded-[50%] hover:bg-[#332B3A] hover:cursor-pointer btn"
+            >
+              <img
+                class="w-[1.5vw]"
+                src="./Image/Header/language-icon.png"
+                alt=""
+              />
+            </div>
+            <a class="hidden sm:flex" href="../login.html">
+              <button
+                class="border-[1px] border-solid border-white transition-all duration-400 ease-in-out text-white px-4 py-2 rounded-md uppercase text-sm font-bold hover:bg-white hover:text-black"
+                type="button"
+              >
+                Login
+              </button>
+            </a>
+            
+            <a href="../buyplan.html">
+              <button
+              class="bg-[#8230C6] hover:bg-[#5C1695] transition-all whitespace-nowrap duration-300 ease-in-out text-white px-2 py-2 sm:p-2 rounded-md uppercase text-[8px] sm:text-sm font-bold"
+              type="button"
+            >
+              <i class="fa-solid fa-crown"></i>&nbsp; Buy Plan
+            </button>
+            </a>
+            <!-- HAMBURGER -->
+
+            <div
+              id="menuToggle"
+              class="bg-[#1B1323] w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+            >
+              <span
+                id="menuIcon"
+                class="material-symbols-outlined text-white font-bold text-xl"
+                >menu</span
+              >
+            </div>
+
+            <div
+              id="overlay1"
+              class="hidden fixed inset-0 bg-[#00000050] transition-all duration-500 ease-in-out z-40 pointer-events-none"
+            ></div>
+
+            <div
+              id="overlay"
+              class="hidden fixed inset-0 bg-[#00000094] transition-all duration-500 ease-in-out z-40 pointer-events-none"
+            ></div>
+
+            <div
+              id="menu"
+              class="menu border-[1px] rounded-md border-[#37293f] transition-all duration-300 ease-in-out w-full h:90vh md:h-[85vh] md:w-[20rem] flex justify-around flex-col gap-3 text-sm text-white"
+            >
+              <div
+                class="overflow-y-scroll cws py-8 h-full flex flex-col gap-4"
+              >
+                <a
+                  class="bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-bold text-sm"
+                  href="./index.html"
+                  >Home</a
+                >
+
+                <div class="border-t border-[1px] border-[#271F2F]"></div>
+                <div
+                  class="w-[80%] flex justify-between text-[#87838B] items-center mx-8"
+                >
+                  <a class="font-bold text-sm" href="">Explore</a>
+                  <i class="fa-solid fa-caret-down text-white"></i>
+                </div>
+                <div
+                  class="border-t border-[1px] w-full border-[#271F2F]"
+                ></div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="w-[80%] flex justify-between text-[#87838B] items-center mx-8"
+                  >
+                    <a class="font-bold text-sm" href="">Plans</a>
+                    <i class="fa-solid fa-caret-up text-white"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Buy Plan</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Have a prepaid code ?</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="border-t border-[1px] w-full border-[#271F2F]"
+                ></div>
+
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="w-[80%] flex justify-between text-[#87838B] items-center mx-8"
+                  >
+                    <a class="font-bold text-sm" href="">Settings</a>
+                    <i class="fa-solid fa-caret-up text-white"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Reset settings to default</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="border-t border-[1px] w-full border-[#271F2F]"
+                ></div>
+                <div
+                  class="hover:bg-[#1D1525] mx-4 px-4 py-4 my-2 rounded-md font-bold text-sm"
+                >
+                  Refer and earn Discount
+                </div>
+                <div
+                  class="border-t border-[1px] w-full border-[#271F2F]"
+                ></div>
+
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="w-[80%] flex justify-between text-[#87838B] items-center mx-8"
+                  >
+                    <a class="font-bold text-sm" href="">Info</a>
+                    <i class="fa-solid fa-caret-up text-white"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >About Us</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Help Center</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Content Redressal Mechanism</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Terms of Use</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Privacy Policy</a
+                    >
+                    <a
+                      class="hover:bg-[#1D1525] mx-4 px-4 py-4 rounded-md font-semibold text-sm"
+                      href=""
+                      >Refer and earn Discount</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="border-t border-[1px] w-full border-[#271F2F]"
+                ></div>
+                <p
+                  class="text-center text-xs w-full text-[#858189] mt-4 font-semibold"
+                >
+                  Version 3.15.17
+                </p>
+              </div>
+            </div>
+
+            <!-- HAMBURGER ENDS -->
+          </div>
+        </div>
+        <nav>
+          <div
+            class="cws md:hidden w-full flex whitespace-nowrap pl-4 justify-between gap-6 items-center text-white text-[14px] sm:text-[16px] overflow-x-scroll"
+          >
+            <a class="border-b-2 border-white noborder" href="#">Home</a>
+            <a href="">TV Shows</a>
+            <a href="">Movies</a>
+            <a href="">Premium</a>
+            <a href="">Web Series</a>
+            <a href="">Rent</a>
+            <a href="">Live TV</a>
+            <a href="">Eduauraa</a>
+            <a href="">Music</a>
+            <a href="">Sports</a>
+            <a href="">Kids</a>
+            <a href="">Songs</a>
+            <a href="">Videos</a>
+          </div>
+        </nav>
+      </header>
     <!-- HEADER ENDS  -->
 
     <!-- MAIN CAROUSEL  -->
@@ -2066,24 +2330,363 @@
     <!--Best of Kids ENDS -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- FOOTER starts -->
+    <footer class="w-full border-t-[1px] border-[#22162c] py-12 px-8 sm:px-16 md:px-30">
+      <div class="flex flex-col gap-6 md:gap-0 items-center md:flex-row justify-between mb-2 md:mb-4">
+        <div class="block md:flex justify-between items-center gap-4 social-apps">
+          <h3 class="text-[#D8D8D8] font-bold hidden md:flex">Download Apps</h3>
+          <div class="flex gap-3">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.graymatrix.did"
+              ><img
+                class="play-store-img"
+                src="./Image/Footer/play_store.png"
+                alt="PlayStore"
+            /></a>
+            <a
+              href="https://apps.apple.com/in/app/zee5-movies-web-series-shows/id743691886"
+              ><img
+                class="app-store"
+                src="./Image/Footer/app_store - Copy.png"
+                alt="App Store"
+            /></a>
+          </div>
+        </div>
+        <div class="block md:flex justify-between items-center gap-[1rem]">
+          <h3 class="text-[#D8D8D8] font-bold hidden md:flex">Connect with us</h3>
+          <div class="flex items-center gap-[1rem] text-white">
+            <div class="h-[40px] w-[40px] bg-[#221a29] flex justify-center items-center text-decoration-none text-white rounded-full hover:bg-[#3C5A99]">
+              <a href="https://www.facebook.com/ZEE5/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </div>
+            <div class="h-[40px] w-[40px] bg-[#221a29] flex justify-center items-center text-decoration-none text-white rounded-full hover:bg-[#d1135f]">
+              <a href="https://www.instagram.com/zee5/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div class="h-[40px] w-[40px] bg-[#221a29] flex justify-center items-center text-decoration-none text-white rounded-full hover:bg-[#227dc3]">
+              <a href="https://twitter.com/zee5india"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <div class="h-[40px] w-[40px] bg-[#221a29] flex justify-center items-center text-decoration-none text-white rounded-full hover:bg-[#da3919]">
+              <a
+                href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="flex w-full mt-8 flex-wrap justify-around md:justify-start items-center">
+        <ul class=" flex flex-wrap gap-4 text-center justify-around items-center">
+          <li class="border-right pr-6 md:pr-[2rem] text-decoration-none list-none"><a href="">Channels</a></li>
+          <li class="border-right pr-6 md:pr-[2rem] text-decoration-none list-none"><a href="">About Us</a></li>
+          <li class="border-right pr-6 md:pr-[2rem] text-decoration-none list-none"><a href="">Help Center</a></li>
+          <li class="border-right pr-6 md:pr-[2rem] text-decoration-none list-none"><a href="">Privacy Policy</a></li>
+          <li class="pr-6 md:pr-[2rem] text-decoration-none list-none"><a href="">Terms of use</a></li>
+        </ul>
+      </div>
+
+      <div class="hidden md:flex justify-between my-[1rem]">
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a  class="text-decoration-none text-white font-bold " href="">Popular TV Shows</a></h3>
+          </div>
+          <div>
+            <ul class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Mahabharat</a>
+              </li>
+              <li>
+                <a href="">Kahan ho Tum</a>
+              </li>
+              <li>
+                <a href="">Jhansi Ki Rani</a>
+              </li>
+              <li>
+                <a href="">Kumkum Bhagya</a>
+              </li>
+              <li>
+                <a href="">Kundali Bhagya</a>
+              </li>
+              <li>
+                <a href="">Bhagya Lakshmi</a>
+              </li>
+              <li>
+                <a href="">Meet</a>
+              </li>
+              <li>
+                <a href="">Annapoorna</a>
+              </li>
+              <li>
+                <a href="">Indira</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a class="text-decoration-none text-white font-bold" href="">Premium Movies</a></h3>
+          </div>
+          <div class="flex flex-col gap-[1rem]">
+            <ul  class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Ghoomer</a>
+              </li>
+              <li>
+                <a href="">Gadar 2</a>
+              </li>
+              <li>
+                <a href="">Haddi</a>
+              </li>
+              <li>
+                <a href="">Kisi Ka Bhai Kisi Ki Jaan</a>
+              </li>
+              <li>
+                <a href="">Bandaa</a>
+              </li>
+              <li>
+                <a href="">RRR</a>
+              </li>
+              <li>
+                <a href="">Uunchai</a>
+              </li>
+              <li>
+                <a href="">Uri: The Surgical Strike</a>
+              </li>
+              <li>
+                <a href="">The Kashmir Files</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a class="text-decoration-none text-white font-bold" href="">Popular LIVE TV Channels</a></h3>
+          </div>
+          <div>
+            <ul  class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Zee TV HD</a>
+              </li>
+              <li>
+                <a href="">&TV HD</a>
+              </li>
+              <li>
+                <a href="">Zee Marathi HD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a class="text-decoration-none text-white font-bold" href="">Popular Web Series</a></h3>
+          </div>
+          <div>
+            <ul  class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Love Bites</a>
+              </li>
+              <li>
+                <a href="">Black Widows</a>
+              </li>
+              <li>
+                <a href="">Duranga 2</a>
+              </li>
+              <li>
+                <a href="">Shikarpur</a>
+              </li>
+              <li>
+                <a href="">Taj</a>
+              </li>
+              <li>
+                <a href="">Sunflower</a>
+              </li>
+              <li>
+                <a href="">Tripling</a>
+              </li>
+              <li>
+                <a href="">Pitchers</a>
+              </li>
+              <li>
+                <a href="">Naxalbari</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a class="text-decoration-none text-white font-bold" href="">Bollywood Top Celebrities</a></h3>
+          </div>
+          <div>
+            <ul class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Sunny Leone</a>
+              </li>
+              <li>
+                <a href="">Disha Patani</a>
+              </li>
+              <li>
+                <a href="">Deepika Padukone</a>
+              </li>
+              <li>
+                <a href="">Salman Khan</a>
+              </li>
+              <li>
+                <a href="">Manoj Bajpayee</a>
+              </li>
+              <li>
+                <a href="">Nora Fatehi</a>
+              </li>
+              <li>
+                <a href="">Pooja Hegde</a>
+              </li>
+              <li>
+                <a href="">Sunny Deol</a>
+              </li>
+              <li>
+                <a href="">Abhishek Bachchan</a>
+              </li>
+              <li>
+                <a href="">Amitabh Bachchan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="py-[.8rem] text-[.8rem]">
+            <h3><a class="text-decoration-none text-white font-bold" href="">Games</a></h3>
+          </div>
+          <div>
+            <ul  class = "flex flex-col gap-3 text-[#736F77] text-xs font-semibold">
+              <li>
+                <a href="">Play</a>
+              </li>
+              <li>
+                <a href="">Stories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+            class="w-full h-auto flex md:hidden justify-around flex-col gap-3 text-sm text-white"
+          >
+            <div
+              class="overflow-y-scroll cws py-8 h-full flex flex-col gap-4"
+            >
+              <div class="w-full flex justify-between text-white items-center">
+                <a
+                class="font-bold text-sm"
+                href="./index.html"
+                >Popular TV Shows</a
+              >
+              <i class="fa-solid fa-chevron-down text-xs text-white"></i>
+              </div>
+
+              <div class="border-t border-[1px] border-[#271F2F]"></div>
+              <div class="w-full flex justify-between text-white items-center">
+                <a
+                class="font-bold text-sm"
+                href="./index.html"
+                >Premium Movies</a
+              >
+              <i class="fa-solid fa-chevron-down text-xs text-white"></i>
+              </div>
+
+              <div
+                class="border-t border-[1px] w-full border-[#271F2F]"
+              ></div>
+
+              <div class="flex flex-col gap-2">
+                <div
+                  class="w-full flex justify-between text-white items-center"
+                >
+                  <a class="font-bold text-sm" href="">Popular Live TV Channels</a>
+                  <i class="fa-solid fa-chevron-up text-xs text-white"></i>
+                </div>
+                <ul class="text-xs text-[#736F77] pl-2">
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Zee TV HD</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; &TV HD</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Zee Marathi HD</li>
+                </ul>
+              </div>
+              <div
+              class="border-t border-[1px] w-full border-[#271F2F]"
+            ></div>
+
+            <div class="flex flex-col gap-2">
+              <div
+                class="w-full flex justify-between text-white items-center"
+              >
+                <a class="font-bold text-sm" href="">Popular Web Series</a>
+                <i class="fa-solid fa-chevron-up text-xs text-white"></i>
+              </div>
+              <ul class="text-xs text-[#736F77] pl-2">
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Love Bites</li>
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Black Widow</li>
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Taj</li>
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Sunflower</li>
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Tripling</li>
+                <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Pitchers</li>
+              </ul>
+            </div>
+
+              <div
+                class="border-t border-[1px] w-full border-[#271F2F]"
+              ></div>
+
+              <div class="flex flex-col gap-2">
+                <div
+                  class="w-full flex justify-between text-white items-center"
+                >
+                  <a class="font-bold text-sm" href="">Bollywood Top Celebrities</a>
+                  <i class="fa-solid fa-chevron-up text-xs text-white"></i>
+                </div>
+                <ul class="text-xs text-[#736F77] pl-2">
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Sunyy Leone</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Disha Patani</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Shahrukh Khan</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Manoj Bajpayee</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Pankaj Tripathi</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Saiyami Kher</li>
+                </ul>
+              </div>
+
+              <div
+                class="border-t border-[1px] w-full border-[#271F2F]"
+              ></div>
+
+              <div class="flex flex-col gap-2">
+                <div
+                  class="w-full flex justify-between text-white items-center"
+                >
+                  <a class="font-bold text-sm" href="">Popular Web Series</a>
+                  <i class="fa-solid fa-chevron-up text-xs text-white"></i>
+                </div>
+                <ul class="text-xs text-[#736F77] pl-2">
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Play</li>
+                  <li><i class="fa-solid fa-circle fa-2xs"></i>&nbsp; Stories</li>
+                  
+                </ul>
+              </div>
+              
+              <div
+                class="border-t border-[1px] w-full border-[#271F2F]"
+              ></div>
+              
+            </div>
+        </div>
+      <p class="mt-5rem text-[#736F77] text-xs -mb-4">
+        Best viewed on Google Chrome 80+, Safari 5.1.5+<br />
+        Copyright © 2023 Zee Entertainment Enterprises Ltd. All rights
+        reserved.
+      </p>
+    </footer>
     <!-- FOOTER END -->
   </main>
   <a href="#" class="back-to-top" title="button">

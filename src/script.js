@@ -25,7 +25,6 @@ window.addEventListener('scroll', function () {
         backToTopButton.classList.add("active");
     } else {
         backToTopButton.classList.remove("active");
-
     }
 });
 
@@ -53,3 +52,22 @@ function handleScroll(carouselId) {
 handleScroll('carousel1');
 handleScroll('carousel2');
 handleScroll('carousel3');
+
+
+function showResults() {
+    var resultsContainer = document.getElementById('search-results');
+    if (window.innerWidth >= 800) {
+        resultsContainer.style.display = 'block';
+        overlay1.classList.toggle('hidden');    
+    }
+
+    document.addEventListener('click', function (event) {
+        var isClickInside = document.getElementById('search-container').contains(event.target);
+        if (!isClickInside) {
+            if (resultsContainer.style.display === 'block') {
+                overlay1.classList.toggle('hidden');
+            }
+            resultsContainer.style.display = 'none';
+        }
+    });
+}
