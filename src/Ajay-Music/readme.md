@@ -98,18 +98,21 @@ Throughout the development of our Zee5 Clone Website Project, our team encounter
  - Music Page
 
 
-   <img src="">
+  ![image](https://github.com/AjaySRawat07/Zee-5/assets/149299603/7de8d755-380c-4eae-b959-b2f532a36143)
+
    
-   <img src="">
-   
-   <img src="">
+   ![image](https://github.com/AjaySRawat07/Zee-5/assets/149299603/2caf5971-b381-4622-b4ec-d53c6e97084b)
+
 - Sports Page
   
-   <img src="">
+ ![image](https://github.com/AjaySRawat07/Zee-5/assets/149299603/76137321-982c-43c0-a0f0-ebe29f2015ce)
+
    
-   <img src="">
+   ![image](https://github.com/AjaySRawat07/Zee-5/assets/149299603/9a8bf4ef-20a8-48e7-ad8a-d4c15bcdd6c1)
+
    
-   <img src="">
+  ![image](https://github.com/AjaySRawat07/Zee-5/assets/149299603/3388d149-3093-417b-a91d-1883b8a9db63)
+
 
 
 **Achievements**
