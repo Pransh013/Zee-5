@@ -30,6 +30,17 @@ Explore the Login and Sign Up pages, meticulously designed to reflect the ZEE5 a
 - **Buy Plan Page**
 Discover a user-friendly Buy Plan page, providing an interface to explore subscription options and delve into exclusive content.
 Emphasizing a commitment to responsive design, we aim to ensure a consistent and enjoyable experience across diverse devices.
+
+![image](https://github.com/Pransh013/Zee-5/assets/105149813/7969e20d-1859-493c-8127-fc55fba36a53)
+
+![image](https://github.com/Pransh013/Zee-5/assets/105149813/ef7feb88-d51d-4b84-9a8c-be53b46f5645)
+
+![image](https://github.com/Pransh013/Zee-5/assets/105149813/fc153c9e-cc1f-491a-8d98-6caf6a284f4a)
+
+![image](https://github.com/Pransh013/Zee-5/assets/105149813/cf452c5e-00ae-4b50-9317-227f91219837)
+
+![image](https://github.com/Pransh013/Zee-5/assets/105149813/ccf7a2c0-25f4-4cda-a410-2bfc300adb5a)
+
 ---
 
 
