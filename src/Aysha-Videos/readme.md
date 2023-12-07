@@ -96,12 +96,21 @@ Throughout the development of our Zee5 Clone Website Project, our team encounter
 ## Website UI Explanation
 
  - LiveTV Page
+![image](https://github.com/aysha0602/Zee-5/assets/130392190/4d696a6c-068c-4756-a598-d32c6d6e68a7)
+
+![image](https://github.com/aysha0602/Zee-5/assets/130392190/81a7b94c-f5b0-4f1e-8fde-634525df3e2c)
+
 
 
   
 - Videos Page
   
- 
+ ![image](https://github.com/aysha0602/Zee-5/assets/130392190/0dcc2003-6779-443e-8594-4a2972322943)
+
+ ![image](https://github.com/aysha0602/Zee-5/assets/130392190/957023e7-af09-4e33-96fd-b49b4c87fee6)
+
+ ![image](https://github.com/aysha0602/Zee-5/assets/130392190/78f35429-6325-42fa-8ea5-1ad85afd55ce)
+
 
 
 **Achievements**
