@@ -127,26 +127,29 @@ Throughout the development of our Zee5 Clone Website Project, our team encounter
  - Tv Shows Page
 
 
-   <img src="">
+   ![Img1](https://github.com/karan17102003/Zee-5/assets/149183000/99006928-ddf9-4cd9-b2f0-39f7c469b9d0)
+
    
-   <img src="">
+  ![Img1](https://github.com/karan17102003/Zee-5/assets/149183000/52e2e91e-38ef-4ad1-ba1a-50fdb32e1d5e)
+
+  ![Img2](https://github.com/karan17102003/Zee-5/assets/149183000/61f2c1f0-307b-483a-98da-781524721f4a)
+
+
    
-   <img src="">
 - Rent Page
-  
-   <img src="">
-   
-   <img src="">
-   
-   <img src="">
+  ![Img4](https://github.com/karan17102003/Zee-5/assets/149183000/0c013f77-737b-4867-9715-fbfc82577913)
+
+  ![Img6](https://github.com/karan17102003/Zee-5/assets/149183000/3b541c3e-073d-4001-9b6a-ab4c7e3470c2)
+
 
 - Eduauraa Page
   
-   <img src="">
-   
-   <img src="">
-   
-   <img src="">
+   ![Img7](https://github.com/karan17102003/Zee-5/assets/149183000/6262d3d7-5ee5-4cb2-bf04-6ffa76b2a1ac)
+
+  ![Img9](https://github.com/karan17102003/Zee-5/assets/149183000/713468d8-b13d-437e-84d5-65e883b4a357)
+
+
+
    
 
 ## **CONCLUSION**
