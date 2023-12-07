@@ -1,4 +1,3 @@
-
 # Zee5 Website Clone By **Team WebWeavers**
 
 ### Welcome to the Zee5 Website Clone! This project is a replica of the Zee5 website, developed using HTML, CSS, Tailwind and JavaScript. In this README, you'll find all the information about this project.
@@ -42,7 +41,6 @@ Explore the ZEE5 Clone, a meticulously crafted web application mirroring the sle
 
 ## Features:
 - The clone faithfully reproduces the design and interface of the original ZEE5 website.
-- Provides a seamless and user-friendly experience for accessing medical test reports, scheduling appointments, and interacting with healthcare services.
 - Built using HTML, CSS, Tailwind, and JavaScript, presented as a web application.
 - Implemented semantic HTML tags throughout the project to enhance accessibility, readibility and structure.
 - Responsive design ensures a pleasant streaming and navigation experience tailored to different device types.
@@ -129,7 +127,7 @@ Throughout the development of our Zee5 Clone Website Project, our team encounter
 Our project encompasses various sections, including Patients, Doctors, Business Partnership, About Us, Investors, Contact Us, Blogs, FAQs, and more.***
 
 **Achievements**
-- Faithful Representation: We have strived to provide a faithful representation of the Dr. ZEE5 website, mirroring its visual aesthetics, layout, and key functionalities.
+- Faithful Representation: We have strived to provide a faithful representation of the ZEE5 website, mirroring its visual aesthetics, layout, and key functionalities.
 - Learning and Skill Development: This project has been a valuable learning experience in web development.
 - We've honed our skills in HTML, CSS, and the Tailwind CSS framework, allowing us to create responsive and visually appealing web pages.
-- Portfolio Enhancement: The Dr. ZEE5 project serves as a testament to our web development abilities, providing a meaningful addition to our portfolios.
+- Portfolio Enhancement: The ZEE5 project serves as a testament to our web development abilities, providing a meaningful addition to our portfolios.
