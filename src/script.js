@@ -65,7 +65,7 @@ function showResults() {
         var isClickInside = document.getElementById('search-container').contains(event.target);
         if (!isClickInside) {
             if (resultsContainer.style.display === 'block') {
-                overlay1.classList.toggle('hidden');
+                overlay1.classList.toggle('hidden');    
             }
             resultsContainer.style.display = 'none';
         }

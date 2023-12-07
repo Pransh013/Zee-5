@@ -1929,6 +1929,11 @@ footer ul li a:hover {
   background-color: rgb(92 22 149 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#753ba4\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 59 164 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#8332C6\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(131 50 198 / var(--tw-bg-opacity));
