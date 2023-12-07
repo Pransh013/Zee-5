@@ -1547,9 +1547,15 @@ video {
   color: rgb(167 133 255 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 .text-\[\#A875FA\] {
   --tw-text-opacity: 1;
   color: rgb(168 117 250 / var(--tw-text-opacity));
+=======
+.text-\[\#A875FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(168 117 255 / var(--tw-text-opacity));
+>>>>>>> e0b9a84d373c7baf6b440cde14e966ffcb786683
 }
 
 .text-\[\#B7B5BA\] {
@@ -1570,6 +1576,10 @@ video {
 .text-\[\#F2F2F2\] {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.text-\[\#b1a8a891\] {
+  color: #b1a8a891;
 }
 
 .text-white {
@@ -2352,6 +2362,11 @@ footer ul li a:hover {
 
   .md\:pr-\[2rem\] {
     padding-right: 2rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-\[1\.75rem\] {
