@@ -891,6 +891,10 @@ video {
   list-style-type: none;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1490,6 +1494,11 @@ video {
   color: rgb(167 133 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#A875FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(168 117 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#B7B5BA\] {
   --tw-text-opacity: 1;
   color: rgb(183 181 186 / var(--tw-text-opacity));
@@ -1508,6 +1517,10 @@ video {
 .text-\[\#F2F2F2\] {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.text-\[\#b1a8a891\] {
+  color: #b1a8a891;
 }
 
 .text-white {
@@ -1999,6 +2012,10 @@ footer ul li a:hover {
     display: flex;
   }
 
+  .sm\:h-\[25vh\] {
+    height: 25vh;
+  }
+
   .sm\:h-\[44vh\] {
     height: 44vh;
   }
@@ -2087,6 +2104,10 @@ footer ul li a:hover {
     height: 5rem;
   }
 
+  .md\:h-\[30vh\] {
+    height: 30vh;
+  }
+
   .md\:h-\[85vh\] {
     height: 85vh;
   }
@@ -2137,6 +2158,11 @@ footer ul li a:hover {
 
   .md\:pr-\[2rem\] {
     padding-right: 2rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-\[1\.75rem\] {
