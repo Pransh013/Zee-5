@@ -31,11 +31,20 @@ Explore the ZEE5 Clone, a meticulously crafted web application mirroring the sle
 
 - We embarked on an exciting collaboration to mirror the refined aesthetics of the ZEE5 website. Our collective effort centered on capturing the visual essence of the original, showcasing our skills in this creative venture.
 ---
-
-## My work:
+## My designed pages
 - Premium Page
+![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/f599ab5a-6574-4d72-afbb-3210f04d9032)
+![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/95a9dda9-0db5-471e-90eb-5a24937d9b75)
+![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/8da3469d-f9b8-4fcc-9ada-d4531714e137)
+![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/30e10307-8b61-4c34-bcf2-ceecf7f7d313)
+
 - Webseries Page
----
+  ![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/6081ec28-2aae-41d0-ad84-19c7c30337cd)
+  ![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/82b1e02a-0bae-490c-90d7-d562aa7e1fb7)
+  ![image](https://github.com/TheShahilRaj/Zee-5/assets/119603555/57c502cc-7ea4-4a8a-beaf-d88ffa52f511)
+
+
+
 
 ## Technologies Used:    
 
@@ -112,12 +121,9 @@ Experimenting with HTML, CSS & Javascript provided valuable insights into its be
 3. Problem Solving
 Encountering and solving errors enhanced problem-solving skills among team members.
 
+**Achievements**
+- Learning and Skill Development: This project has been a valuable learning experience in web development.
+- We've honed our skills in HTML, CSS, and the Tailwind CSS framework, allowing us to create responsive and visually appealing web pages.  
 ## **CONCLUSION**
-
 ***In the process of recreating the user interface (UI) of the ZEE5 website.
 All the pages above are responsive for all devices and each page is linked to the home page of the website.
-
-**Achievements**
-
-- Learning and Skill Development: This project has been a valuable learning experience in web development.
-- We've honed our skills in HTML, CSS, and the Tailwind CSS framework, allowing us to create responsive and visually appealing web pages.
