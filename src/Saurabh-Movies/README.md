@@ -96,12 +96,16 @@ Throughout the development of our Zee5 Clone Website Project, our team encounter
 ## Website UI Explanation
 
  - Movies Page
+ ![Screenshot (4222)](https://github.com/saurabhy990/Zee-5/assets/65731020/785c749c-2ad1-4f16-b936-82c8d4b10e75)
 
+![Screenshot (4223)](https://github.com/saurabhy990/Zee-5/assets/65731020/4efb1c46-8014-4034-90c2-277e88294626)
+ 
 
-   
 
 - Kids Page
-  
+  ![Screenshot (4226)](https://github.com/saurabhy990/Zee-5/assets/65731020/ce64115e-7a8c-46cb-bf0d-f6cf9ce5d75e)
+  ![Screenshot (4227)](https://github.com/saurabhy990/Zee-5/assets/65731020/fd902cb7-d305-4ae0-a1f4-2c4d3db647ae)
+
   
 
 
