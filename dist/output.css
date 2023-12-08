@@ -779,10 +779,6 @@ video {
   height: 47vh;
 }
 
-.h-\[5\.5vh\] {
-  height: 5.5vh;
-}
-
 .h-\[530px\] {
   height: 530px;
 }
@@ -819,6 +815,10 @@ video {
   width: 12rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-\[1\.5vw\] {
   width: 1.5vw;
 }
@@ -839,10 +839,6 @@ video {
   width: 340px;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
@@ -855,8 +851,8 @@ video {
   width: 45px;
 }
 
-.w-\[55\%\] {
-  width: 55%;
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[70\%\] {
@@ -959,6 +955,10 @@ video {
 
 .gap-1\.5 {
   gap: 0.375rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -1205,14 +1205,14 @@ video {
   background-color: rgb(131 48 198 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#C097E2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 151 226 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#F9F9F9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b173e3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 115 227 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#ededed\] {
@@ -1267,6 +1267,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-\[4px\] {
@@ -1477,6 +1481,10 @@ video {
   text-transform: uppercase;
 }
 
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .text-\[\#333333\] {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
@@ -1522,6 +1530,11 @@ video {
   color: rgb(135 131 139 / var(--tw-text-opacity));
 }
 
+.text-\[\#8E71D9\] {
+  --tw-text-opacity: 1;
+  color: rgb(142 113 217 / var(--tw-text-opacity));
+}
+
 .text-\[\#A785FF\] {
   --tw-text-opacity: 1;
   color: rgb(167 133 255 / var(--tw-text-opacity));
@@ -1542,11 +1555,6 @@ video {
   color: rgb(216 216 216 / var(--tw-text-opacity));
 }
 
-.text-\[\#E0CBF1\] {
-  --tw-text-opacity: 1;
-  color: rgb(224 203 241 / var(--tw-text-opacity));
-}
-
 .text-\[\#F2F2F2\] {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
@@ -1554,6 +1562,11 @@ video {
 
 .text-\[\#b1a8a891\] {
   color: #b1a8a891;
+}
+
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1830,7 +1843,7 @@ footer ul li a:hover {
 /* CARAOUSEL-1 */
 
 .imageholder{
-  width: 98%;
+  width: 100%;
   height: 76.5vh;
   display: flex;
   gap:12px;
@@ -1881,7 +1894,7 @@ footer ul li a:hover {
 .cardCount {
   color: #A785FF;
   font-size: 30px;
-  font-style: bold;
+  font-style: bolder;
 }
 
 .remaining::after {
@@ -1891,6 +1904,7 @@ footer ul li a:hover {
   background-image: linear-gradient( rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.036));
   inset: 0;
   z-index: 1000;
+  pointer-events: none;
 }
 
 .animatedbg {
@@ -1908,7 +1922,7 @@ footer ul li a:hover {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #ffffff1b, #ffffff0e);
+  background: linear-gradient(to left, #ffffff14, #ffffff0e);
   pointer-events: none;
 }
 
@@ -1926,7 +1940,7 @@ footer ul li a:hover {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff2c;
+  background: #ffffff23;
   animation: heaven 25s linear infinite;
   bottom: -250px;
 }
@@ -1935,31 +1949,31 @@ footer ul li a:hover {
   left: 5%;
   width: 90px;
   height:90px;
-  animation-delay: 8s;
-  animation-duration: 18s;
+  animation-delay: 4s;
+  animation-duration: 10s;
 }
 
 .squares li:nth-child(2) {
   left: 10%;
   width: 110px;
   height:110px;
-  animation-delay: 2s;
-  animation-duration: 12s;
+  animation-delay: 8s;
+  animation-duration: 10s;
 }
 
 .squares li:nth-child(3) {
   left: 20%;
   width:55px;
   height:55px;
-  animation-delay: 6s;
-  animation-duration: 22s;
+  animation-delay: 2s;
+  animation-duration: 6s;
 }
 
 .squares li:nth-child(4) {
   left: 25%;
   width:80px;
   height:80px;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-duration: 8s;
 }
 
@@ -1967,8 +1981,8 @@ footer ul li a:hover {
   left: 35%;
   width:150px;
   height:150px;
-  animation-delay: 11s;
-  animation-duration: 25s;
+  animation-delay: 7s;
+  animation-duration: 17s;
 }
 
 .squares li:nth-child(6) {
@@ -1983,40 +1997,40 @@ footer ul li a:hover {
   left: 50%;
   width:150px;
   height:150px;
-  animation-delay: 11s;
-  animation-duration: 20s;
+  animation-delay: 4s;
+  animation-duration: 9s;
 }
 
 .squares li:nth-child(8) {
   left: 65%;
   width:60px;
   height:60px;
-  animation-delay: 19s;
-  animation-duration: 22s;
+  animation-delay: 2s;
+  animation-duration: 8s;
 }
 
 .squares li:nth-child(9) {
   left: 70%;
   width:80px;
   height:80px;
-  animation-delay: 6s;
+  animation-delay: 5s;
   animation-duration: 18s;
 }
 
 .squares li:nth-child(10) {
   left: 80%;
-  width:110px;
-  height:110px;
+  width:160px;
+  height:160px;
   animation-delay: 8s;
   animation-duration: 15s;
 }
 
 .squares li:nth-child(11) {
   left: 90%;
-  width:170px;
-  height:170px;
-  animation-delay: 5s;
-  animation-duration: 10s;
+  width:110px;
+  height:110px;
+  animation-delay: 4s;
+  animation-duration: 13s;
 }
 
 @keyframes heaven {
@@ -2123,6 +2137,11 @@ footer ul li a:hover {
 .hover\:bg-\[\#8332C6\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(131 50 198 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#8a52b8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 82 184 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#d1135f\]:hover {
@@ -2262,6 +2281,11 @@ footer ul li a:hover {
 }
 
 @media (min-width: 800px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2306,12 +2330,32 @@ footer ul li a:hover {
     width: 390px;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .md\:flex-grow-\[1\] {
     flex-grow: 1;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:justify-start {
@@ -2332,6 +2376,19 @@ footer ul li a:hover {
 
   .md\:p-2 {
     padding: 0.5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
   }
 
   .md\:pr-\[2rem\] {
@@ -2355,8 +2412,17 @@ footer ul li a:hover {
     font-size: 1rem;
   }
 
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
   }
 }

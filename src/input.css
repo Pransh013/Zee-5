@@ -246,7 +246,7 @@ footer ul li a:hover {
 /* CARAOUSEL-1 */
 
 .imageholder{
-  width: 98%;
+  width: 100%;
   height: 76.5vh;
   display: flex;
   gap:12px;
@@ -296,7 +296,7 @@ footer ul li a:hover {
 .cardCount {
   color: #A785FF;
   font-size: 30px;
-  font-style: bold;
+  font-style: bolder;
 }
 
 .remaining::after {
@@ -306,6 +306,7 @@ footer ul li a:hover {
   background-image: linear-gradient( rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.036));
   inset: 0;
   z-index: 1000;
+  pointer-events: none;
 }
 
 .animatedbg {
@@ -323,7 +324,7 @@ footer ul li a:hover {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #ffffff1b, #ffffff0e);
+  background: linear-gradient(to left, #ffffff14, #ffffff0e);
   pointer-events: none;
 }
 
@@ -341,7 +342,7 @@ footer ul li a:hover {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff2c;
+  background: #ffffff23;
   animation: heaven 25s linear infinite;
   bottom: -250px;
 }
@@ -350,31 +351,31 @@ footer ul li a:hover {
   left: 5%;
   width: 90px;
   height:90px;
-  animation-delay: 8s;
-  animation-duration: 18s;
+  animation-delay: 4s;
+  animation-duration: 10s;
 }
 
 .squares li:nth-child(2) {
   left: 10%;
   width: 110px;
   height:110px;
-  animation-delay: 2s;
-  animation-duration: 12s;
+  animation-delay: 8s;
+  animation-duration: 10s;
 }
 
 .squares li:nth-child(3) {
   left: 20%;
   width:55px;
   height:55px;
-  animation-delay: 6s;
-  animation-duration: 22s;
+  animation-delay: 2s;
+  animation-duration: 6s;
 }
 
 .squares li:nth-child(4) {
   left: 25%;
   width:80px;
   height:80px;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-duration: 8s;
 }
 
@@ -382,8 +383,8 @@ footer ul li a:hover {
   left: 35%;
   width:150px;
   height:150px;
-  animation-delay: 11s;
-  animation-duration: 25s;
+  animation-delay: 7s;
+  animation-duration: 17s;
 }
 
 .squares li:nth-child(6) {
@@ -398,40 +399,40 @@ footer ul li a:hover {
   left: 50%;
   width:150px;
   height:150px;
-  animation-delay: 11s;
-  animation-duration: 20s;
+  animation-delay: 4s;
+  animation-duration: 9s;
 }
 
 .squares li:nth-child(8) {
   left: 65%;
   width:60px;
   height:60px;
-  animation-delay: 19s;
-  animation-duration: 22s;
+  animation-delay: 2s;
+  animation-duration: 8s;
 }
 
 .squares li:nth-child(9) {
   left: 70%;
   width:80px;
   height:80px;
-  animation-delay: 6s;
+  animation-delay: 5s;
   animation-duration: 18s;
 }
 
 .squares li:nth-child(10) {
   left: 80%;
-  width:110px;
-  height:110px;
+  width:160px;
+  height:160px;
   animation-delay: 8s;
   animation-duration: 15s;
 }
 
 .squares li:nth-child(11) {
   left: 90%;
-  width:170px;
-  height:170px;
-  animation-delay: 5s;
-  animation-duration: 10s;
+  width:110px;
+  height:110px;
+  animation-delay: 4s;
+  animation-duration: 13s;
 }
 
 
