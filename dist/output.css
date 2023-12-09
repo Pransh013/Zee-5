@@ -1527,6 +1527,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2615,6 +2619,11 @@ footer ul li a:hover {
     padding-right: 2rem;
   }
 
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .md\:pl-0 {
     padding-left: 0px;
   }
@@ -2625,6 +2634,10 @@ footer ul li a:hover {
 
   .md\:pr-\[2rem\] {
     padding-right: 2rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-left {
